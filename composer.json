@@ -1,0 +1,53 @@
+{
+    "name": "fcoedno/phpcountry",
+    "type": "library",
+    "description": "Provides the ISO databases for the standards 639-3, 3166, 3166-3, 4217 and 15924",
+    "keywords": [
+        "iso",
+        "639-3",
+        "3166",
+        "3166-3",
+        "4217",
+        "15924"
+    ],
+    "homepage": "https://github.com/fcoedno/phpcountry",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francisco Edno",
+            "email": "ednofco@gmail.com",
+            "homepage": "https://github.com/fcoedno",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=7.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPCountry\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPCountry\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
